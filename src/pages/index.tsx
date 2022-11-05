@@ -3,6 +3,7 @@ import { Header } from '../components/header'
 import {AiFillPlayCircle} from "react-icons/ai";
 import { Card } from '../components/Card';
 import { Newsletter } from '../components/Newsletter';
+import { Footer } from '../components/Footer';
 
 
 export default function Home() {
@@ -30,13 +31,13 @@ export default function Home() {
             <p className='text-center md:text-left text-yellow-400 relative top-[-6px]'>Online Streaming movies</p>
             <h3 className='text-4xl text-white'>Current Movies</h3>
           </div>
-          <div className='flex-1 flex md:justify-end items-center ml-4 flex-col md:flex-row flex-wrap md:flex-nowrap gap-6 pt-6 md:pt-0'>
+          <div className='flex-1 flex md:justify-end items-center ml-4 md:flex-row flex-wrap md:flex-nowrap gap-6 pt-6 md:pt-0'>
             <span className='px-6 flex justify-center py-3 text-white rounded-full border-[1px] border-yellow-400 w-full md:w-[10vw]  bg-black'>Movies</span>
             <span className='px-6 flex justify-center py-3 text-white rounded-full border-[1px] border-yellow-400 w-full md:w-[10vw]  bg-black'>Movies</span>
             <span className='px-6 flex justify-center py-3 text-white rounded-full border-[1px] border-yellow-400 w-full md:w-[10vw]  bg-black'>Movies</span>
           </div>
           </div>
-          <section className='w-full py-14 gap-10 flex flex-col flex-1 md:flex-row md:justify-between md:flex-wrap items-center h-auto'>
+          <section className='w-full py-14 gap-10  flex flex-col flex-1 md:flex-row md:justify-between md:flex-wrap items-center h-auto'>
             <Card/>
             <Card/>
             <Card/>
@@ -58,7 +59,6 @@ export default function Home() {
                 Watch Your Movies, Series Or Animes Onine!
               </h3>
             </div>
-
           </div>
           <div className='flex flex-col items-center md:items-start gap-6 py-4'>
             <p className='md:w-[500px] w-96 px-8 md:text-justify text-slate-50 text-center '>
@@ -78,7 +78,7 @@ export default function Home() {
             <p className='text-center md:text-left text-yellow-400 relative top-[-6px]'>Online Streaming movies</p>
             <h3 className='text-4xl text-white'>Current Movies</h3>
             </div>
-          <div className='flex-1 flex md:justify-end items-center ml-4 flex-col md:flex-row flex-wrap md:flex-nowrap gap-6 pt-6 md:pt-0'>
+          <div className='flex-1 flex md:justify-end items-center ml-4  md:flex-row flex-wrap md:flex-nowrap gap-6 pt-6 md:pt-0'>
             <span className='px-6 flex justify-center py-3 text-white rounded-full border-[1px] border-yellow-400 w-full md:w-[10vw]  bg-black'>Movies</span>
             <span className='px-6 flex justify-center py-3 text-white rounded-full border-[1px] border-yellow-400 w-full md:w-[10vw]  bg-black'>Movies</span>
             <span className='px-6 flex justify-center py-3 text-white rounded-full border-[1px] border-yellow-400 w-full md:w-[10vw]  bg-black'>Movies</span>
@@ -93,6 +93,7 @@ export default function Home() {
       </section>
       <Newsletter/>
     </main>
+    <Footer/>
     </>
    
   )

@@ -12,7 +12,7 @@ export const Card = () =>{
                     <span className="text-white">Batmam Fullstack</span>
                     <span className="text-yellow-400">2022</span>
                 </div>
-                <div className="flex-1 flex py-4 items-center justify-between px-2">
+                <div className="flex-1 flex py-4 items-center justify-between px-0">
                     <span className="text-yellow-400 border-[1px] px-2">HD</span>
                     <div className="flex items-center gap-1">
                         <AiFillClockCircle className="text-yellow-400 text-2xl"/>
