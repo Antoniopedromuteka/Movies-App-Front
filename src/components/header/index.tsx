@@ -3,7 +3,7 @@ import {RiMovie2Fill} from "react-icons/ri"
 
 export const Header = () =>{
     return(
-      <header className="w-full h-[100px] border-b-2">
+      <header className="w-full h-[100px]  ">
         <div className="flex gap-6 flex-row flex-wrap h-auto flex-1 justify-between items-center relative pt-8 md:px-32 px-12">
             <div className="flex items-center gap-2">
                 <RiMovie2Fill className="text-yellow-400 text-4xl"/>
