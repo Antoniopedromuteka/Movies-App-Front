@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Header } from '../components/header'
 import {AiFillPlayCircle} from "react-icons/ai";
 import { Card } from '../components/Card';
+import { Newsletter } from '../components/Newsletter';
 
 
 export default function Home() {
@@ -90,6 +91,7 @@ export default function Home() {
           </section>
           </div>
       </section>
+      <Newsletter/>
     </main>
     </>
    
