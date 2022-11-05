@@ -1,5 +1,4 @@
 import { RiMovie2Fill, RiFacebookBoxFill, RiInstagramFill, RiLinkedinBoxFill, RiGoogleFill } from "react-icons/ri";
-
 export const Footer = () => {
     return (
         <footer className="w-full h-auto flex flex-col pt-10 pb-4 md:px-20 px-6 bg-gray-bg">

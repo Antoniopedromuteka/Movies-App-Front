@@ -4,6 +4,8 @@ import {AiFillPlayCircle} from "react-icons/ai";
 import { Card } from '../components/Card';
 import { Newsletter } from '../components/Newsletter';
 import { Footer } from '../components/Footer';
+import Swing from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Zoom';
 
 
 export default function Home() {
@@ -11,6 +13,7 @@ export default function Home() {
     <>
     <div className='w-full h-screen bg-banner bg-no-repeat bg-cover bg-center '>
         <Header/>
+        <Swing>
         <div className='w-full flex flex-col gap-8  md:gap-6 text-white md:pt-24 pt-20 md:px-32 px-12'>
             <div className='flex flex-1 justify-start max-w-[400px] flex-wrap'>
              <p className='md:text-6xl text-5xl'>
@@ -23,9 +26,12 @@ export default function Home() {
             </button>
             </div>
         </div>
+        </Swing>
     </div>
     <main className=''>
+      
       <section className='w-full h-auto bg-gray-bg pt-10 md:px-20 px-4'>
+        <Swing>
         <div className='flex items-center md:flex-row flex-col '>
           <div>
             <p className='text-center md:text-left text-yellow-400 relative top-[-6px]'>Online Streaming movies</p>
@@ -43,8 +49,10 @@ export default function Home() {
             <Card/>
             <Card/>
           </section>
+          </Swing>
       </section>
       <section className='w-full flex-1 h-auto md:px-40 px-4 py-14 gap-20  bg-blue-bg flex flex-col flex-wrap-reverse md:flex-nowrap md:flex-row justify-between'>
+        <Fade>
         <div className='md:w-[50vw] w-full mt-12 h-[400px] py-10 md:py-0 order-2 md:order-1  bg-white'>
         </div>
         <div className='w-full md:order-2 order-1'>
@@ -71,8 +79,10 @@ export default function Home() {
             </button>
           </div>
         </div>
+          </Fade>
       </section>
       <section className='w-full h-auto bg-gray-bg flex flex-col md:px-20 px-6 py-16'>
+          <Fade>
           <div className='flex flex-col items-center gap-8'>
             <div className='flex flex-1 flex-col items-center gap-4'>
             <p className='text-center md:text-left text-yellow-400 relative top-[-6px]'>Online Streaming movies</p>
@@ -90,6 +100,7 @@ export default function Home() {
             <Card/>
           </section>
           </div>
+          </Fade>
       </section>
       <Newsletter/>
     </main>
