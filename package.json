@@ -20,6 +20,8 @@
     "react-dom": "18.2.0",
     "react-icon": "^1.0.0",
     "styled-components": "^5.3.6",
+    "react-reveal": "^1.2.2",
+
     "typescript": "4.8.4"
   },
   "devDependencies": {
