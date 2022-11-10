@@ -1,14 +1,18 @@
-import LoginModal from "../../components/loginModal";
 import * as C from "./style";
 import logo from '../../src/assets/images/logo.svg';
 import Image from "next/image";
+import LoginModal from "../../components/loginModal";
+import { useEffect } from "react";
 
 const Login=()=>{
+    useEffect(()=>{
+        document.body.style.overflow = 'hidden';
+    });
     return(
         <C.Container style={{  
             backgroundImage: "url("+"https://i.ibb.co/LZqvwYR/movie-1.png"+")",
             backgroundPosition: 'center',
-            backgroundSize: '100%',
+            backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'
           }}>
             <div>

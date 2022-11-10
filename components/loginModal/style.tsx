@@ -19,6 +19,7 @@ export const Container=styled.div`
     @media (max-width:500px){
         width:100%;
         border-radius:3rem 3rem 0 0;
+        padding:2.2rem 2rem;
     }
 `;
 
@@ -49,8 +50,7 @@ export const Form=styled.div`
             width:100%;
             height:3rem;
         }
-    }
-    
+    }    
 `;
 
 export const SignInButton=styled.button`
@@ -62,7 +62,6 @@ export const SignInButton=styled.button`
 export const RememberContainer=styled.div`
     display:flex;
     justify-content:space-between;
-    align-items:center;
     width:100%;
     margin-top:1rem;
     font-size:.7rem;
@@ -74,5 +73,7 @@ export const Remember=styled.div`
         width:1rem;
         height:1rem;
         outline:none;
+        border:none;
+        margin-right:.3rem;
     }
 `;

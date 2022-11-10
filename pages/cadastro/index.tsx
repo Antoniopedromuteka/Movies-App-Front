@@ -1,26 +1,30 @@
-import CadastroModal from "../../components/cadastroModal ";
-import * as C from "./style";
+import * as S from "./style";
 import logo from '../../src/assets/images/logo.svg';
 import Image from "next/image";
+import { useEffect } from "react";
+import CadastroModal from "../../components/cadastroModal ";
 
 const Cadastro=()=>{
+    useEffect(()=>{
+        document.body.style.overflow = 'hidden';
+    });
     return(
-        <C.Container style={{  
+        <S.MainContainer style={{  
             backgroundImage: "url("+"https://i.ibb.co/LZqvwYR/movie-1.png"+")",
             backgroundPosition: 'center',
-            backgroundSize: '100%',
+            backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'
           }}>
-            <div>
-                <header>
+            <S.Container>
+                <S.Header>
                     <Image src={logo} alt='logo' width={160} />
-                    <C.SignUpButton>
-                        Sign In
-                    </C.SignUpButton>
-                </header>
+                    <S.SignUpButton>
+                        Sign Up
+                    </S.SignUpButton>
+                </S.Header>
                 <CadastroModal/>
-            </div>
-        </C.Container>
+            </S.Container>
+        </S.MainContainer>
     )
 }
 export default Cadastro;
