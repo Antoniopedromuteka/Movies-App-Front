@@ -14,6 +14,7 @@
     "@types/react": "18.0.24",
     "@types/react-dom": "18.0.8",
     "@types/react-icons": "^3.0.0",
+    "@types/reveal": "^4.2.0",
     "next": "13.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",

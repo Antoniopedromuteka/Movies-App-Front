@@ -1,21 +1,23 @@
 import Head from 'next/head'
 import { Header } from '../components/header'
 import {AiFillPlayCircle} from "react-icons/ai";
-import { Card } from '../components/Card';
+import { Card, MockProps } from '../components/Card';
 import { Newsletter } from '../components/Newsletter';
 import { Footer } from '../components/Footer';
 import Swing from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Zoom';
+import { useState } from 'react';
+import { Mock } from './mock';
 
 
 export default function Home() {
   return (
     <>
-    <div className='w-full h-screen bg-banner bg-no-repeat bg-cover bg-center '>
+    <div className='w-full h-screen bg-[url("../assets/images/movie-5.png")] bg-no-repeat bg-cover bg-center '>
         <Header/>
         <Swing>
         <div className='w-full flex flex-col gap-8  md:gap-6 text-white md:pt-24 pt-20 md:px-32 px-12'>
-            <div className='flex flex-1 justify-start max-w-[400px] flex-wrap'>
+            <div className='flex flex-1 justify-start max-w-[600px] flex-wrap'>
              <p className='md:text-6xl text-5xl'>
                Come To See <span className='text-yellow-400'>Unlimited</span>  Movie, Series, Tv Show & More 
              </p>
@@ -44,16 +46,15 @@ export default function Home() {
           </div>
           </div>
           <section className='w-full py-14 gap-10  flex flex-col flex-1 md:flex-row md:justify-between md:flex-wrap items-center h-auto'>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
+            {Mock.map((data) =>(
+              <Card data = {data}/>
+            ))}
           </section>
           </Swing>
       </section>
       <section className='w-full flex-1 h-auto md:px-40 px-4 py-14 gap-20  bg-blue-bg flex flex-col flex-wrap-reverse md:flex-nowrap md:flex-row justify-between'>
         <Fade>
-        <div className='md:w-[50vw] w-full mt-12 h-[400px] py-10 md:py-0 order-2 md:order-1  bg-white'>
+        <div className='bg-[url("../assets/images/service-banner.jpg")] bg-no-repeat bg-cover bg-center md:w-[50vw] w-full mt-12 h-[400px] py-10 md:py-0 order-2 md:order-1'>
         </div>
         <div className='w-full md:order-2 order-1'>
           <div className='flex flex-col '>
@@ -94,17 +95,18 @@ export default function Home() {
             <span className='px-6 flex justify-center py-3 text-white rounded-full border-[1px] border-yellow-400 w-full md:w-[10vw]  bg-black'>Movies</span>
           </div>
           <section className='w-full py-14 gap-10 flex flex-col flex-1 md:flex-row md:justify-between md:flex-wrap items-center h-auto'>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
+            {Mock.map((mockData) =>(
+                <Card data = {mockData}/>
+            ))} 
           </section>
           </div>
           </Fade>
       </section>
       <Newsletter/>
     </main>
+    <Fade>
     <Footer/>
+    </Fade>
     </>
    
   )
