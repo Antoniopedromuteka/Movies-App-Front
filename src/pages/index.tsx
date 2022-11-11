@@ -33,7 +33,7 @@ export default function Home() {
         </div>
         </Slide>
     </div>
-    <main className=''>
+    <main>
       <section className='w-full h-auto bg-gray-bg pt-10 md:px-20 px-4'>
         <div className='flex items-center md:flex-row flex-col '>
           <div>
