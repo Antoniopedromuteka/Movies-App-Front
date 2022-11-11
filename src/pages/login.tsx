@@ -1,10 +1,11 @@
 import Head from 'next/head'
-import { Header } from '../components/header'
-import LoginModal from '../components/loginModal'
+// import { Header } from '../components/header'
+// import LoginModal from '../components/loginModal'
 
 export default function Home() {
   return (
     <>
+        <div></div>
         {/* <LoginModal/> */}
     </>
    
