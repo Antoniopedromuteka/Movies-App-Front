@@ -47,7 +47,7 @@ export default function Home() {
           </div>
           <section className='w-full py-14 gap-10  flex flex-col flex-1 md:flex-row md:justify-between md:flex-wrap items-center h-auto'>
             {Mock.map((data) =>(
-              <Card data = {data}/>
+              <Card {...data}/>
             ))}
           </section>
           </Swing>
@@ -96,7 +96,7 @@ export default function Home() {
           </div>
           <section className='w-full py-14 gap-10 flex flex-col flex-1 md:flex-row md:justify-between md:flex-wrap items-center h-auto'>
             {Mock.map((mockData) =>(
-                <Card data = {mockData}/>
+                <Card  {...mockData}/>
             ))} 
           </section>
           </div>
