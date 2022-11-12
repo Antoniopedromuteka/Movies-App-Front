@@ -11,11 +11,11 @@ export default function Description(){
         <section className="w-full h-screen bg-no-repeat bg-cover bg-center bg-[url('../assets/images/movie-desc.png')]">
             <div className="w-full h-screen bg-sky-900 opacity-[0.9]">
                 <Header/>
-                <section className="w-full flex md:flex-row flex-col items-center md:items-start md:pt-20 pt-4 md:px-32 px-2 gap-10">
-                    <div className="w-[360px]">
-                      <Image className="w-full h-[500px]"  src={img} alt="filme"/>    
+                <section className="w-full flex md:flex-row flex-wrap flex-col items-center md:items-start md:pt-20 pt-8 md:px-32 px-2 gap-10">
+                    <div className="md:w-[30%] w-[90%]">
+                      <Image className="w-full md:h-[500px] h-[350px]"  src={img} alt="filme"/>    
                     </div>
-                    <div className="flex flex-col w-full  md:items-start items-center px-4">
+                    <div className="flex flex-col md:w-[60%] w-full  md:items-start items-center px-4">
                       <div className="flex flex-col w-full py-2">
                         <h3 className="text-yellow-400 text-left text-3xl md:pb-6 pb-2">NEW EPISODES</h3>
                         <h3 className="text-4xl pb-6 text-white">BAT<span className="text-yellow-400">MAN</span></h3>
