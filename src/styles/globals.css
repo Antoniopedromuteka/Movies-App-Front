@@ -6,3 +6,9 @@
 body{
     background: #000;
 }
+
+@layer components {
+    .button{
+        @apply flex items-center gap-2 bg-yellow-400 p-2 px-5 rounded-3xl text-xl text-black;
+    }
+}

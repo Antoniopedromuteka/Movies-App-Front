@@ -5,7 +5,7 @@ import { Card, MockProps } from '../components/Card';
 import { Newsletter } from '../components/Newsletter';
 import { Footer } from '../components/Footer';
 import { Mock } from './mock';
-import { Fade, Slide,Bounce} from "react-awesome-reveal";
+import { Fade, Slide} from "react-awesome-reveal";
 
 
 export default function Home() {
