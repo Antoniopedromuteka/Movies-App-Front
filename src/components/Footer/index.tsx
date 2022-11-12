@@ -9,20 +9,21 @@ export const Footer = () => {
                 </div>
                 <div className="md:flex py-4 md:py-0 flex-col md:flex-row items-center md:flex-1 justify-end">
                 <ul className="flex gap-4  md:gap-14 text-gray-400">
-                   <li>Home</li>
-                   <li>Movie</li>
-                   <li>About</li>
-                   <li>Series</li> 
+                   <li className="cursor-pointer">Home</li>
+                   <li className="cursor-pointer">Movie</li>
+                   <li className="cursor-pointer">About</li>
+                   <li className="cursor-pointer">Series</li> 
                 </ul>
             </div>
             </header>
             <div className="flex items-center md:flex-row flex-col gap-6 md:gap-0 py-10">
                 <div>
-                    <ul className="flex gap-6  md:gap-14 text-gray-400">
-                    <li>FAQ</li>
-                    <li>HELP CENTER</li>
-                    <li>TERMS OF USES</li>
-                    <li>PRIVACITY</li> 
+                    <ul className="flex flex-wrap md:justify-start justify-center gap-6  md:gap-14 text-gray-400">
+                    <li className="cursor-pointer font-normal">FAQ</li>
+                    <li className="cursor-pointer font-normal">HELP CENTER</li>
+                    <li className="cursor-pointer font-normal">TERMS OF USES</li>
+                    <li className="cursor-pointer font-normal">PRIVACITY</li> 
+                    <li className="cursor-pointer font-normal">DESENVOLVIDO POR <span className="text-white">M-CODERS</span></li> 
                     </ul>
                 </div>
                 <div className="flex flex-1 justify-end gap-4 px-6 ">

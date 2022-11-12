@@ -14,11 +14,11 @@ export default function Home() {
     <head>
       <title>Filmelane | Home </title>
     </head>
-    <div className='w-full h-screen bg-[url("../assets/images/movie-5.png")] bg-no-repeat bg-cover bg-center '>
+    <div className='w-full h-screen bg-[url("../assets/images/movie-bg.png")] bg-no-repeat bg-cover bg-center '>
+        <div className='w-screen h-screen bg-blue-bg opacity-[0.7]'>
         <Fade>
         <Header/>
         </Fade>
-        <Slide direction='right'>
         <div className='w-full flex flex-col gap-8  md:gap-6 text-white md:pt-24 pt-20 md:px-32 px-12'>
             <div className='flex flex-1 justify-start max-w-[600px] flex-wrap'>
              <p className='md:text-6xl text-5xl'>
@@ -31,7 +31,7 @@ export default function Home() {
             </button>
             </div>
         </div>
-        </Slide>
+        </div>
     </div>
     <main>
       <section className='w-full h-auto bg-gray-bg pt-10 md:px-20 px-4'>
@@ -96,6 +96,11 @@ export default function Home() {
             <span className='px-6 flex justify-center py-3 text-white rounded-full border-[1px] border-yellow-400 w-full md:w-[10vw]  bg-black'>Movies</span>
             <span className='px-6 flex justify-center py-3 text-white rounded-full border-[1px] border-yellow-400 w-full md:w-[10vw]  bg-black'>Movies</span>
           </div>
+          <section className='w-full py-14 gap-10 flex flex-col flex-1 md:flex-row md:justify-between md:flex-wrap items-center h-auto'>
+            {Mock.map((mockData) =>(
+                <Card  {...mockData}/>
+            ))} 
+          </section>
           <section className='w-full py-14 gap-10 flex flex-col flex-1 md:flex-row md:justify-between md:flex-wrap items-center h-auto'>
             {Mock.map((mockData) =>(
                 <Card  {...mockData}/>

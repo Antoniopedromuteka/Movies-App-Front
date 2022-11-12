@@ -16,15 +16,15 @@ export const Header = () => {
                 </div>
                 <div className="hidden  md-900:flex md-900:flex-1 justify-center md-900:justify-end md-800:justify-end">
                     <ul className="md:flex   md:gap-14 md-900:gap-6 md-800:gap-6 text-white">
-                        <li>Home</li>
-                        <li>Movie</li>
-                        <li>About</li>
-                        <li>Series</li>
+                        <li className="text-white font-semibold cursor-pointer hover:text-slate-300">Home</li>
+                        <li className="text-white font-semibold cursor-pointer hover:text-slate-300">Movie</li>
+                        <li className="text-white font-semibold cursor-pointer hover:text-slate-300">About</li>
+                        <li className="text-white font-semibold cursor-pointer hover:text-slate-300">Series</li>
                     </ul>
                 </div>
                 <div className="hidden  md-1205:flex  md:gap-8 md:flex-1 md:justify-end">
-                    <input className="p-2  outline-none border-yellow-400 border-[1px] bg-gray-800 text-white  px-4 md-1205:px-2 md-1205:py-2 rounded-3xl" type="search" name="" id="" />
-                    <button className="p-2 outline-none border-yellow-400 border-[1px] rounded-3xl text-white bg-gray-800 px-10 md-1205:px-5">Sign In</button>
+                    <input className="p-2   outline-none border-yellow-400 border-[1px] bg-gray-700 text-white  px-4 md-1205:px-4 md-1205:py-2 rounded-3xl" type="search" name="" id="" />
+                    <button className="p-2 outline-none border-yellow-400 border-[1px] rounded-3xl text-white bg-black px-10 md-1205:px-5 ">Sign In</button>
                 </div>
                 <div className="flex md-892:hidden flex-1 justify-end">
                     {menuActive ?
