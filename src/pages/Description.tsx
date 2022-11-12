@@ -4,6 +4,7 @@ import img from "../assets/images/movie-3.png";
 import {BsFillShareFill} from "react-icons/bs"
 import {AiFillPlayCircle} from "react-icons/ai"
 import {AiFillClockCircle} from "react-icons/ai"
+import {AiOutlinePlayCircle} from "react-icons/ai"
 
 export default function Description(){
     return(
@@ -12,7 +13,10 @@ export default function Description(){
             <div className="w-full h-screen bg-sky-900 opacity-[0.9]">
                 <Header/>
                 <section className="w-full flex md:flex-row flex-wrap flex-col items-center md:items-start md:pt-20 pt-8 md:px-32 px-2 gap-10">
-                    <div className="md:w-[30%] w-[90%]">
+                    <div className="md:w-[30%] w-[90%] relative cursor-pointer">
+                      <div className="w-full absolute h-full bg-blue-bg opacity-[0.6] flex items-center justify-center">
+                      <AiOutlinePlayCircle className="text-8xl hover:font-bold hover:text-9xl transition-all duration-100 text-white"/>
+                      </div>
                       <Image className="w-full md:h-[500px] h-[350px]"  src={img} alt="filme"/>    
                     </div>
                     <div className="flex flex-col md:w-[60%] w-full  md:items-start items-center px-4">
